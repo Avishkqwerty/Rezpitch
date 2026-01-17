@@ -1,4 +1,5 @@
 import { Mail, Phone } from 'lucide-react';
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   const scrollToSection = (id: string) => {
@@ -12,11 +13,15 @@ export function Footer() {
     <footer className="bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
+          {/* Brand (Logo) */}
           <div>
-            <h3 className="text-3xl mb-4" style={{ fontWeight: 800, color: '#14b8a6' }}>
-              Rezpitch
-            </h3>
+            <div className="mb-4 h-12 w-auto">
+              <img
+                src={logo}
+                alt="Rezpitch Logo"
+                className="h-8 w-auto object-contain scale-[3] origin-left"
+              />
+            </div>
             <p className="text-gray-400 leading-relaxed">
               The fintech-powered B2B platform connecting luxury hospitality with elite destination management companies worldwide.
             </p>
@@ -93,7 +98,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400">
-            © 2024 Rezpitch. All rights reserved.
+            © 2026 Rezpitch. All rights reserved.
           </p>
         </div>
       </div>
