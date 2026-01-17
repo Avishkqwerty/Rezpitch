@@ -24,7 +24,7 @@ export function Header() {
             <img
               src={logo}
               alt="Rezpitch Logo"
-              className="h-8 w-auto object-contain scale-[5] origin-left"
+              className="h-8 w-auto object-contain scale-[4] origin-left"
             />
           </div>
 
