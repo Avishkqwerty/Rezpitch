@@ -19,45 +19,30 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           
-          {/* Logo */}
+          {/* Logo (5x Zoom) */}
           <div className="flex items-center">
             <img
               src={logo}
               alt="Rezpitch Logo"
-              className="h-8 w-auto object-contain"
+              className="h-8 w-auto object-contain scale-[5] origin-left"
             />
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
+            <button onClick={() => scrollToSection("home")} className="text-gray-700 hover:text-teal-600 transition-colors">
               Home
             </button>
-            <button
-              onClick={() => scrollToSection("features")}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
+            <button onClick={() => scrollToSection("features")} className="text-gray-700 hover:text-teal-600 transition-colors">
               Features
             </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
+            <button onClick={() => scrollToSection("about")} className="text-gray-700 hover:text-teal-600 transition-colors">
               About
             </button>
-            <button
-              onClick={() => scrollToSection("faq")}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
+            <button onClick={() => scrollToSection("faq")} className="text-gray-700 hover:text-teal-600 transition-colors">
               FAQ
             </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
+            <button onClick={() => scrollToSection("contact")} className="text-gray-700 hover:text-teal-600 transition-colors">
               Contact
             </button>
           </div>
@@ -77,45 +62,26 @@ export function Header() {
             className="md:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-3 border-t border-gray-200">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md"
-            >
+            <button onClick={() => scrollToSection("home")} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md">
               Home
             </button>
-            <button
-              onClick={() => scrollToSection("features")}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md"
-            >
+            <button onClick={() => scrollToSection("features")} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md">
               Features
             </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md"
-            >
+            <button onClick={() => scrollToSection("about")} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md">
               About
             </button>
-            <button
-              onClick={() => scrollToSection("faq")}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md"
-            >
+            <button onClick={() => scrollToSection("faq")} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md">
               FAQ
             </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md"
-            >
+            <button onClick={() => scrollToSection("contact")} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 rounded-md">
               Contact
             </button>
 
